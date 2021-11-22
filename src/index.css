@@ -1,4 +1,9 @@
 @import './vendor/normalize.css';
-@import './vendor/fonts/Inter-Web/inter.css';
+@import './vendor/fonts/HelveticaNeue/helvetica.css';
 
 @import './App.css';
+
+@import './components/Profile/Profile.css';
+@import './components/UserInfo/UserInfo.css';
+@import './components/CommonInfo/CommonInfo.css';
+@import './components/SingleCommonInfo/SingleCommonInfo.css';

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 550;
+  font-display: swap;
+  src: url('HelveticaNeueCyr-Thin.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('HelveticaNeueCyr-Bold.woff2') format('woff2');
+}

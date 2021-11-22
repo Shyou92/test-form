@@ -6,23 +6,22 @@ import UserInfo from '../UserInfo/UserInfo';
 function Profile() {
   return (
     <section className='profile'>
-      <div className='profile__header-contaiener'>
-        <h2 className='profile__header'>Профиль</h2>
-        <button className='profile_changeAvatar'></button>
-      </div>
+      <h2 className='profile__header'>Профиль</h2>
       <div className='profile__container'>
-        <img src='' alt='user avatar' className='profile__avatar' />
+        <div className='profile__avatar-container'>
+          <img src='#' alt='user avatar' className='profile__avatar' />
+          <button className='profile__changeAvatar'></button>
+        </div>
         <div className='profile__userInfo-container'>
           {config.userInfo.map((user) => {
             return (
               <UserInfo key={user.sign} sign={user.sign} value={user.value} />
             );
           })}
-
-          <CommonInfo />
         </div>
-        <Notifications />
+        <CommonInfo />
       </div>
+      <Notifications />
     </section>
   );
 }

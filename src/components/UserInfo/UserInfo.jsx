@@ -1,8 +1,8 @@
 function userInfo({ sign, value }) {
   return (
     <>
-      <p className='profile__sign'>{sign}</p>
-      <p className='profile__value'>{value}</p>
+      <p className='sign'>{sign}</p>
+      <p className='value'>{value}</p>
     </>
   );
 }

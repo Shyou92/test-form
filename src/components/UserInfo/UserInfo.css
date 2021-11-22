@@ -1,0 +1,18 @@
+.sign {
+  margin: 0;
+  padding: 0;
+  font-weight: 550;
+  color: rgba(14, 14, 14, 0.7);
+  font-size: 18px;
+  line-height: 27.45px;
+}
+
+.value {
+  margin: 0;
+  padding: 0;
+  font-weight: 550;
+  font-size: 20px;
+  color: #0e0e0e;
+  font-weight: 550;
+  line-height: 30.5px;
+}
