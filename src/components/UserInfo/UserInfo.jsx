@@ -1,5 +1,4 @@
 function userInfo({ nickname, status, email, telegram }) {
-  console.log(telegram);
   return (
     <section className='userInfo'>
       <span className='sign'>Никнейм</span>
