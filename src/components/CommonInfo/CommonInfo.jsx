@@ -1,7 +1,7 @@
 import config from '../../utils';
 import SingleCommonInfo from '../SingleCommonInfo/SingleCommonInfo';
 
-function CommonInfo() {
+function CommonInfo(props) {
   return (
     <section className='commonInfo'>
       {config.commonInfo.map((item) => {
@@ -10,6 +10,8 @@ function CommonInfo() {
             key={item.sign}
             sign={item.sign}
             value={item.value}
+            handleCopied={props.onChange}
+            copied={props.copied}
           />
         );
       })}

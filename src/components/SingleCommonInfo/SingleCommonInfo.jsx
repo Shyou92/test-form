@@ -1,20 +1,33 @@
-import { useState } from 'react';
+import { useRef } from 'react';
 
-function SingleCommonInfo({ sign, value }) {
-  const [copied, setCopied] = useState(false);
+function SingleCommonInfo(props) {
+  const copyValueRef = useRef();
 
   const handleClick = () => {
-    setCopied(true);
-    setTimeout(() => setCopied(false), 1500);
+    props.handleCopied();
+    handleCopyByClick();
+  };
+
+  const handleCopyByClick = (e) => {
+    if (props.sign === 'Пригласительная ссылка') {
+      const copyText = copyValueRef.current.innerText;
+      navigator.clipboard.writeText(copyText);
+    }
   };
 
   return (
     <>
-      <p className='sign'>{sign}</p>
-      <p className='value   commonInfo__value'>{value}</p>
-      {sign === 'Пригласительная ссылка' ? (
+      <p className='sign'>{props.sign}</p>
+      <p
+        className='value commonInfo__value'
+        ref={copyValueRef}
+        onClick={handleCopyByClick}
+      >
+        {props.value}
+      </p>
+      {props.sign === 'Пригласительная ссылка' ? (
         <button className='commonInfo__copy' onClick={handleClick}>
-          {copied ? 'Скопировано' : 'Скопировать'}
+          Скопировать
         </button>
       ) : (
         ''
