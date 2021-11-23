@@ -1,5 +1,53 @@
 .notifications {
   margin-top: 13px;
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  left: 360px;
+  order: 4;
+}
+
+.notifications__header {
+  letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 1024px) {
+  .notifications {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 795px) {
+  .notifications {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  .notifications {
+    width: 80%;
+    order: 2;
+  }
+
+  .notifications__header {
+    margin-top: 17px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .notifications {
+    order: 3;
+    margin-top: 20px;
+  }
+  .notifications__header {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    width: 72px;
+    margin: 0 0 20px;
+    font-size: 10px;
+    line-height: 13px;
+  }
 }

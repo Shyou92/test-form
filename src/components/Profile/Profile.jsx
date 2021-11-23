@@ -19,7 +19,7 @@ function Profile() {
     setCopied(true);
     setTimeout(() => setCopied(false), 1500);
   };
-  console.log(userData);
+
   return (
     <section className='profile'>
       <h2 className='profile__header'>Профиль</h2>
@@ -28,22 +28,19 @@ function Profile() {
           <img src='#' alt='user avatar' className='profile__avatar' />
           <button className='profile__changeAvatar'></button>
         </div>
-        <div className='profile__container'>
-          <div className='profile__userInfo-container'>
-            <UserInfo
-              nickname={userData.nickname}
-              status={userData.status}
-              email={userData.email}
-              telagram={userData.telagram}
-            />
-            <Notifications />
-          </div>
-          <CommonInfo
-            handleCopied={handleCopied}
-            copied={copied}
-            userDataWallet={userData.wallet}
-          />
-        </div>
+        <UserInfo
+          nickname={userData.nickname}
+          status={userData.status}
+          email={userData.email}
+          telegram={userData.telegram}
+        />
+
+        <Notifications />
+        <CommonInfo
+          handleCopied={handleCopied}
+          copied={copied}
+          userDataWallet={userData.wallet}
+        />
       </div>
       <CopiedPopup copied={copied} />
     </section>

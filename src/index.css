@@ -6,7 +6,7 @@
 @import './components/Profile/Profile.css';
 @import './components/UserInfo/UserInfo.css';
 @import './components/CommonInfo/CommonInfo.css';
-@import './components/SingleCommonInfo/SingleCommonInfo.css';
+@import './components/UserInfo/UserInfo.css';
 @import './components/Notifications/Notifications.css';
 @import './components/SingleNote/SingleNote.css';
 @import './components/CopiedPopup/CopiedPopup.css';

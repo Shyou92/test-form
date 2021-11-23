@@ -5,6 +5,7 @@
 .form__label-text {
   font-size: 14px;
   margin-left: 12px;
+  letter-spacing: 0.05em;
 }
 
 .form__item {
@@ -63,11 +64,44 @@
 }
 
 .form__item:checked + .form__slider::before {
-  -webkit-transform: translateX(22px);
-  -ms-transform: translateX(22px);
   transform: translateX(15px);
 }
 
 .form__item:checked + .form__slider.round {
   background: #8960e2;
+}
+
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  .form__container {
+    width: 90%;
+    margin-bottom: 12px;
+  }
+  .form__label-text {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .form__label-text {
+    width: 144px;
+    font-size: 10px;
+    line-height: 13px;
+    margin-bottom: 12px;
+    margin-left: 11px;
+  }
+
+  .form__switch {
+    width: 24px;
+    height: 13px;
+  }
+  .form__slider::before {
+    width: 9px;
+    height: 9px;
+    left: 1px;
+    bottom: 1px;
+  }
+
+  .form__item:checked + .form__slider::before {
+    transform: translateX(11px);
+  }
 }

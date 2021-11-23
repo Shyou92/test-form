@@ -1,6 +1,7 @@
 .commonInfo {
-  margin-left: 310.5px;
+  margin-left: 32%;
   position: relative;
+  order: 3;
 }
 
 .edit {
@@ -17,6 +18,8 @@
   box-shadow: 20px 20px 200px rgba(240, 240, 240, 0.48);
   border-radius: 10px;
   margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0.05em;
 }
 
 .edit:hover {
@@ -34,8 +37,8 @@
 
 .commonInfo__copy {
   position: absolute;
-  top: 18%;
-  left: 62%;
+  top: 15%;
+  left: 75%;
   width: 130px;
   padding: 0 0 0 10px;
   opacity: 0;
@@ -68,4 +71,131 @@
   visibility: visible;
   opacity: 0.7;
   transition: opacity 1.7s ease;
+}
+
+@media screen and (min-width: 1161px) and (max-width: 1290px) {
+  .commonInfo {
+    margin-left: 22%;
+  }
+
+  .commonInfo__copy {
+    left: 215px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1160px) {
+  .commonInfo {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 915px) and (max-width: 1024px) {
+  .commonInfo {
+    margin-left: 8%;
+  }
+
+  .commonInfo__copy {
+    top: 20%;
+    left: 215px;
+    width: 120px;
+    font-size: 16px;
+  }
+
+  .commonInfo__copy::before {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+@media screen and (min-width: 796px) and (max-width: 914px) {
+  .commonInfo {
+    margin-left: 15px;
+  }
+
+  .commonInfo__copy {
+    top: 16%;
+    left: 195px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 795px) {
+  .commonInfo {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .commonInfo__copy {
+    top: 32%;
+    left: 210px;
+    font-size: 14px;
+    line-height: 15px;
+    width: 105px;
+  }
+
+  .commonInfo__copy::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .edit {
+    width: 208px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .commonInfo {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
+  }
+  .commonInfo__copy {
+    top: 28%;
+    left: 170px;
+    font-size: 14px;
+    line-height: 15px;
+    width: 105px;
+  }
+
+  .commonInfo__copy::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .edit {
+    width: 208px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .commonInfo__copy {
+    top: 30px;
+    left: 120px;
+    font-size: 10px;
+    width: 80px;
+  }
+
+  .commonInfo__copy::before {
+    width: 12px;
+    height: 12px;
+  }
+
+  .commonInfo {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 80%;
+  }
+
+  .edit {
+    width: 208px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

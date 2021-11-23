@@ -1,10 +1,17 @@
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  order: 2;
+}
+
 .sign {
   margin: 0;
   padding: 0;
   font-weight: 550;
   color: rgba(14, 14, 14, 0.7);
   font-size: 18px;
-  line-height: 27.45px;
+  line-height: 23.45px;
 }
 
 .value {
@@ -14,6 +21,46 @@
   font-size: 20px;
   color: #0e0e0e;
   font-weight: 550;
-  line-height: 30.5px;
+  line-height: 27.45px;
   margin-bottom: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  .userInfo {
+    order: 2;
+    margin-left: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .sign {
+    font-size: 14px;
+    line-height: 15px;
+    margin-bottom: 5px;
+  }
+
+  .value {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .userInfo {
+    margin-left: 11px;
+    order: 2;
+  }
+
+  .sign {
+    font-size: 10px;
+    margin-bottom: 0;
+    line-height: 13px;
+  }
+
+  .value {
+    font-size: 12px;
+    margin-bottom: 5px;
+    line-height: 12px;
+  }
 }
